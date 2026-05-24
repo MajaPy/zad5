@@ -1,4 +1,4 @@
-
+import './style.css';
 import dayjs from 'dayjs';
 
 const form = document.getElementById('birthdayForm');
