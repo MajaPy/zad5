@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Urodzinowy</title>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+
+    <main class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-6 text-blue-600">Kalkulator Urodzinowy</h1>
+        
+        <section>
+            <form id="birthdayForm" class="space-y-4">
+                <div>
+                    <label for="birthDate" class="block text-sm font-medium text-gray-700 mb-1">
+                        Wybierz datę urodzenia:
+                    </label>
+                    <input type="date" id="birthDate" required 
+                           class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-300 p-4 rounded font-semibold hover:bg-blue-400 transition">
+                    Oblicz dni
+                </button>
+            </form>
+        </section>
+
+        <dialog id="resultDialog" class="bg-gray-200 text-red-600 rounded-lg p-6 max-w-sm w-full relative backdrop:bg-black/50">
+            <button id="closeDialog" class="absolute top-2 right-3 text-xl font-bold text-gray-600 hover:text-black">
+                &times;
+            </button>
+            
+            <div id="dialogContent" class="mt-4 font-medium">
+                </div>
+        </dialog>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
